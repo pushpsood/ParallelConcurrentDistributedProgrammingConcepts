@@ -1,0 +1,42 @@
+This repo is made to track and show my approach on learning the fundamentals of parallel, concurrent, and 
+distributed programming. I started with the specialization on Coursera taught by [Vivek Sarkar](https://www.linkedin.com/in/vsarkar)
+named [Parallel, Concurrent, and Distributed Programming in Java Specialization](https://www.coursera.org/specializations/pcdp).
+
+### Skills Gained:
+- Computer Programming
+- Algorithms
+- Theoretical Computer Science
+- Critical Thinking
+- Distributed Computing Architecture
+- Programming Principles
+
+### References:
+- [Parallel, Concurrent, and Distributed Programming in Java Specialization](https://www.coursera.org/specializations/pcdp)
+
+### How to use:
+
+1. Clone the repository:
+    ```bash 
+    gh repo clone pushpsood/ParallelConcurrentDistributedProgrammingConcepts
+    ```
+2. Open the repository in your favorite IDE(preferably intelliJ) and start learning. 
+3. This repository contains different modules that should be traversed in a specific order, module by module, listed below. 
+Each module will have a pom.xml file. To make it a workable module, add them as a Maven module in the order listed below:
+    ```bash
+    ## Command to generate the tree:
+    ## If required get the package(macOS): brew install tree
+    ## tree -o readmeTree.md
+
+    └── README.md
+    ├── ParallelProgrammingInJava
+    │   ├── ParallelProgrammingInJavaWorkingNotes.pdf 
+    │   ├── README.md
+    │   ├── ReciprocalArraySumUsingJavaForkJoinFramework
+    │   ├── AnalyzingStudentStatisticsUsingJavaParallelStreams
+    │   ├── ParallelizingMatrixMatrixMultiplyUsingLoopParallelism
+    │   └── UsingPhasersToOptimizeDataParallelApplications
+    ```
+
+### Reach-out:
+
+If you need any help while going through the repository, feel free to ping me on LinkedIn [Pushp Sood](https://www.linkedin.com/in/pushpsood/)
