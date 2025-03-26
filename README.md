@@ -37,6 +37,17 @@ Each module will have a pom.xml file. To make it a workable module, add them as 
     │   └── UsingPhasersToOptimizeDataParallelApplications
     ```
 
+## Troubleshooting:
+
+- If you're getting the below errors while cloning the repository, run the mentioned command:
+  ```bash
+  ## fatal: the remote end hung up unexpectedly
+  ## error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+  ## send-pack: unexpected disconnect while reading sideband packet
+
+  git config --global http.postBuffer 157286400
+  ```
+
 ### Reach-out:
 
 If you need any help while going through the repository, feel free to ping me on LinkedIn [Pushp Sood](https://www.linkedin.com/in/pushpsood/)
