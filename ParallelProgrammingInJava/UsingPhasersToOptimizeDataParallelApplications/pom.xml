@@ -3,10 +3,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>parallel</groupId>
-    <artifactId>project_4</artifactId>
+    <artifactId>parallel_project_4</artifactId>
     <packaging>jar</packaging>
     <version>0.0</version>
-    <name>project_4</name>
+    <name>parallel_project_4</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
