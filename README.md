@@ -27,14 +27,21 @@ Each module will have a pom.xml file. To make it a workable module, add them as 
     ## If required get the package(macOS): brew install tree
     ## tree -o readmeTree.md
 
-    └── README.md
+    ├── README.md
+    ├── ParallelProgrammingInJavaWorkingNotes.pdf 
     ├── ParallelProgrammingInJava
-    │   ├── ParallelProgrammingInJavaWorkingNotes.pdf 
     │   ├── README.md
     │   ├── ReciprocalArraySumUsingJavaForkJoinFramework
     │   ├── AnalyzingStudentStatisticsUsingJavaParallelStreams
     │   ├── ParallelizingMatrixMatrixMultiplyUsingLoopParallelism
-    │   └── UsingPhasersToOptimizeDataParallelApplications
+    │   ├── UsingPhasersToOptimizeDataParallelApplications
+    ├── ConcurrentProgramminginJava
+    │   ├── README.md
+    │   ├── LockingandSynchronization
+    │   ├── GlobalAndObjectBasedIsolation
+    │   ├── SieveofEratosthenesUsingActorParallelism
+    │   ├── ParallelizationOfBoruvkaMinimumSpanningTreeAlgorithm
+
     ```
 
 ## Troubleshooting:
@@ -47,6 +54,11 @@ Each module will have a pom.xml file. To make it a workable module, add them as 
 
   git config --global http.postBuffer 157286400
   ```
+
+### Working Notes:
+
+- Offline: [ParallelProgrammingInJavaWorkingNotes.pdf](../ParallelConcurrentDistributedProgramming.pdf)
+- Online: [Link](https://acrobat.adobe.com/id/urn:aaid:sc:AP:9eeac7d2-f417-4135-bada-d8044c4e416e)
 
 ### Reach-out:
 

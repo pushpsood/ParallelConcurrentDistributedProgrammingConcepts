@@ -43,8 +43,3 @@ devices.
 ### Certification: 
 
 https://coursera.org/share/16aa25dfa3059c62a500c0b843d036b2
-
-### Working Notes:
-
-- Offline: [ParallelProgrammingInJavaWorkingNotes.pdf](../ParallelProgrammingInJava/ParallelProgrammingInJavaWorkingNotes.pdf)
-- Online: [Link](https://acrobat.adobe.com/id/urn:aaid:sc:AP:4c47d332-124e-4f0f-9038-7ce0371b9095)
