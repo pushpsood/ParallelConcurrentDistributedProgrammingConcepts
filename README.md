@@ -1,14 +1,36 @@
-This repo is made to track and show my approach on learning the fundamentals of parallel, concurrent, and 
+Track of my approach on learning the fundamentals of parallel, concurrent, and 
 distributed programming. I started with the specialization on Coursera taught by [Vivek Sarkar](https://www.linkedin.com/in/vsarkar)
-named [Parallel, Concurrent, and Distributed Programming in Java Specialization](https://www.coursera.org/specializations/pcdp).
+named [Parallel, Concurrent, and Distributed Programming in Java Specialization](https://www.coursera.org/specializations/pcdp) and build Maven 
+projects in this repo to showcase key learning outcomes through practical implementation.
+
+![ScreenShot](https://github.com/pushpsood/ParallelConcurrentDistributedProgrammingConcepts/blob/main/Media/project.jpg?raw=true)
 
 ### Skills Gained:
-- Computer Programming
+- Java Programming
+- Computer Science
+- Apache Spark
+- Servers
+- Scalability
+- Functional Design
+- Performance Tuning
+- Data Structures
+- Java
+- Distributed Computing
 - Algorithms
-- Theoretical Computer Science
-- Critical Thinking
-- Distributed Computing Architecture
-- Programming Principles
+- Network Protocols
+
+### Important Resources:
+- [Java 8 Javadocs](https://docs.oracle.com/javase/8/docs/api/)
+- [PCDP Javadocs](https://habanero-rice.github.io/PCDP/)
+- [PCDP Source Code](https://github.com/habanero-rice/PCDP)
+- [RecursiveAction](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RecursiveAction.html)
+- [RecursiveTask](http://docs.oracle.com/javase/8/docs/api/?java/util/concurrent/RecursiveTask.html)
+- [ForkJoinPool](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html)
+- [Java Streams Javadocs](https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html)
+- [The Java Stream class](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)
+- [A simple Java tutorial on streams](http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/)
+- [A simple Java ForkJoin tutorial](https://docs.oracle.com/javase/tutorial/essential/concurrency/forkjoin.html)
+- [Using the JDK's performance profiler](http://docs.oracle.com/javase/7/docs/technotes/guides/visualvm/)
 
 ### References:
 - [Parallel, Concurrent, and Distributed Programming in Java Specialization](https://www.coursera.org/specializations/pcdp)
@@ -28,21 +50,29 @@ Each module will have a pom.xml file. To make it a workable module, add them as 
     ## tree -o readmeTree.md
 
     ├── README.md
-    ├── ParallelProgrammingInJavaWorkingNotes.pdf 
-    ├── ParallelProgrammingInJava
-    │   ├── README.md
-    │   ├── ReciprocalArraySumUsingJavaForkJoinFramework
-    │   ├── AnalyzingStudentStatisticsUsingJavaParallelStreams
-    │   ├── ParallelizingMatrixMatrixMultiplyUsingLoopParallelism
-    │   ├── UsingPhasersToOptimizeDataParallelApplications
+    ├── Media
+    │  ├── ParallelConcurrentDistributedProgramming.pdf 
+    ├──ParallelProgrammingInJava
+    │  ├── README.md
+    │  ├── ReciprocalArraySumUsingJavaForkJoinFramework
+    │  ├── AnalyzingStudentStatisticsUsingJavaParallelStreams
+    │  ├── ParallelizingMatrixMatrixMultiplyUsingLoopParallelism
+    │  ├── UsingPhasersToOptimizeDataParallelApplications
     ├── ConcurrentProgramminginJava
-    │   ├── README.md
-    │   ├── LockingandSynchronization
-    │   ├── GlobalAndObjectBasedIsolation
-    │   ├── SieveofEratosthenesUsingActorParallelism
-    │   ├── ParallelizationOfBoruvkaMinimumSpanningTreeAlgorithm
+    │  ├── README.md
+    │  ├── LockingandSynchronization
+    │  ├── GlobalAndObjectBasedIsolation
+    │  ├── SieveofEratosthenesUsingActorParallelism
+    │  ├── ParallelizationOfBoruvkaMinimumSpanningTreeAlgorithm
+    ├── DistributedProgramminginJava
+    │  ├── README.md
+    │  ├── FileServer
+    │  ├── MatrixMultiplyInMPI
+    └  └── PageRankWithSpark
 
     ```
+4. You can test the projects by running the respective Test classes in each module. 
+   - For example, to test the `ReciprocalArraySumUsingJavaForkJoinFramework` module, run the `ReciprocalArraySumTest.java` class.
 
 ## Troubleshooting:
 
@@ -55,10 +85,14 @@ Each module will have a pom.xml file. To make it a workable module, add them as 
   git config --global http.postBuffer 157286400
   ```
 
+### Specialization: 
+
+https://www.coursera.org/account/accomplishments/specialization/CJKSM1MQ59H1
+
 ### Working Notes:
 
-- Offline: [ParallelProgrammingInJavaWorkingNotes.pdf](../ParallelConcurrentDistributedProgramming.pdf)
-- Online: [Link](https://acrobat.adobe.com/id/urn:aaid:sc:AP:9eeac7d2-f417-4135-bada-d8044c4e416e)
+- Offline: [ParallelConcurrentDistributedProgramming.pdf](Media/ParallelConcurrentDistributedProgramming.pdf)
+- Online(Comments allowed here, use this for any rectification request): [Link](https://acrobat.adobe.com/id/urn:aaid:sc:AP:9eeac7d2-f417-4135-bada-d8044c4e416e) 
 
 ### Reach-out:
 
