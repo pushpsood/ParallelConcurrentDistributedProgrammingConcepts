@@ -2,18 +2,14 @@ package distributed;
 
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.io.DataOutputStream;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.io.File;
-import java.io.PrintWriter;
 
 import java.net.ServerSocket;
 import java.net.URL;
 import java.net.HttpURLConnection;
 import java.net.SocketException;
-import java.net.ConnectException;
 import java.nio.channels.ClosedByInterruptException;
 
 import java.util.Map;
@@ -22,6 +18,7 @@ import java.util.Random;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+import distributed.server.FileServer;
 import junit.framework.TestCase;
 
 public class FileServerTest extends TestCase {
@@ -81,20 +78,15 @@ public class FileServerTest extends TestCase {
         final ServerSocket socket = new ServerSocket(port);
         socket.setReuseAddress(true);
         final PCDPFilesystem fs = getFilesystem();
-        
-        Runnable runner = new Runnable () {
-            @Override
-            public void run() {
-                try {
-                    FileServer server = new FileServer();
-                    server.run(socket, fs);
-                } catch (SocketException s) {
-                    // Do nothing, assume killed by main thread
-                } catch (ClosedByInterruptException s) {
-                    // Do nothing, assume killed by main thread
-                } catch (IOException io) {
-                    throw new RuntimeException(io);
-                }
+
+        Runnable runner = () -> {
+            try {
+                FileServer server = new FileServer();
+                server.run(socket, fs);
+            } catch (SocketException | ClosedByInterruptException s) {
+                // Do nothing, assume killed by main thread
+            } catch (IOException io) {
+                throw new RuntimeException(io);
             }
         };
 
@@ -121,6 +113,8 @@ public class FileServerTest extends TestCase {
         con.setReadTimeout(5000); // 5 seconds
 
         final int responseCode = con.getResponseCode();
+
+
 
         final String responseStr;
         if (responseCode != 404) {
